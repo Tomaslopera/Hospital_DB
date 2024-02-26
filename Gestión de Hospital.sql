@@ -147,18 +147,18 @@ CREATE TABLE Turno (
 );
 
 CREATE TABLE AsignacionHorarios_Doctores (
-    ID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
     doctor_id BIGINT NOT NULL,
     shift_id INT NOT NULL,
+    PRIMARY KEY (doctor_id, shift_id),
     week DATE NOT NULL,
     FOREIGN KEY (doctor_id) REFERENCES Doctor(CC),
     FOREIGN KEY (shift_id) REFERENCES Turno(ID)
 );
 
 CREATE TABLE AsignacionHorarios_PersonalEnfermeria (
-    ID INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
     nurse_id BIGINT NOT NULL,
     shift_id INT NOT NULL,
+    PRIMARY KEY (nurse_id, shift_id),
     week DATE NOT NULL,
     FOREIGN KEY (nurse_id) REFERENCES PersonalEnfermeria(CC),
     FOREIGN KEY (shift_id) REFERENCES Turno(ID)
