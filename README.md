@@ -27,7 +27,7 @@ Este proyecto consiste en un sistema de gestión hospitalaria para administrar i
 - **Registro y Seguimiento de Procedimientos Médicos:** Registra los procedimientos médicos realizados, incluyendo medicamentos y equipos utilizados.
 - **Asignación de Horarios:** Permite asignar horarios de trabajo a médicos y personal de enfermería.
 
-## Uso del Proyecto
+## Desarrollo del Proyecto
 
 El proyecto fue realizado en SQLServer como práctica para el manejo de bases de datos relacionales.
 
